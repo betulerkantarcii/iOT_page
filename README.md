@@ -1,7 +1,14 @@
-Composer Install
+# sub_page
 
-Add .env file 
+```
+composer install
+```
 
+create mysql database sub_page_db, import from sub_page_db.sql
+
+create new .env file 
+
+```
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:fYmbIuxVuLHjbqR8tPGMgQp2RcMWZlKjrxh0NkPxOMA=
@@ -54,3 +61,4 @@ PUSHER_APP_CLUSTER=mt1
 
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+```
