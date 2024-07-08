@@ -1,9 +1,0 @@
-import './admin-user';
-import './profile-edit-profile';
-import './profile-edit-password';
-import './template';
-import './choice-of-template';
-import './main';
-import './menu-content';
-import './menu';
-import './event-calendar';
