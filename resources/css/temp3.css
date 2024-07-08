@@ -1,0 +1,29 @@
+.img-mobile-temp3{
+    width: 250px;
+    margin: 6px;
+}
+
+.temp3-align{
+    margin: 10px; 
+    font-size:15px;
+}
+
+.temp3-align h2{
+  font-size: 20px;
+}
+
+@media (max-width: 960px) {
+  .img-mobile-temp3{
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+  }
+  .temp3-align{
+    margin: 10px; 
+    font-size:12px;
+  }
+
+.temp3-align h2{
+  font-size: 14px;
+  }
+}

@@ -1,0 +1,331 @@
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.background-container {
+position: relative;
+width: 100%;
+height:95vh; 
+overflow: hidden;
+}
+
+.background {
+background-image:url("{{ url($coverPost_urls[1]) }}"); /* Set your background image here */
+background-size: cover;
+background-position: center;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1; /* Ensures the background is behind the content */
+}
+
+.slideshow-container {
+max-width: 100%; /* Full width of the screen */
+position: relative;
+margin: auto;
+overflow: hidden;
+padding-top: 180px; /* Space for navbar */
+}
+
+.mySlides {
+display: none;
+width: 50%; /* Images will take up 50% of the slideshow-container */
+height: auto;
+margin: auto; /* Centers the image horizontally */
+}
+
+.fadeon {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 65%;
+width: auto;
+margin-top: -50px;
+padding: 16px;
+color: black;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+background-color: white;
+}
+
+.next {
+right: 15%; /* Position adjusted for 50% width images */
+}
+
+.prev {
+left: 15%; /* Position adjusted for 50% width images */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 820px) {
+.background-container{
+height: 60vh;
+}
+
+.mySlides {
+width: 80%; /* Adjusts to 80% width on tablets and below */
+}
+.next {
+right: 10%;
+}
+.prev {
+left: 10%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.mySlides {
+width: 100%; /* Full width on small screens */
+}
+.next, .prev {
+font-size: 16px; /* Smaller font size for navigation buttons */
+padding: 10px; /* Smaller padding for navigation buttons */
+}
+.next {
+right: 5%;
+}
+.prev {
+left: 5%;
+}
+}
+
+/*
+.red-line {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 10px; 
+background-color: red;
+}*/
+.container-mission {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 70vh; /* Full viewport height */
+padding: 20px;
+margin: 80px 50px 80px 50px;
+}
+
+.card-mission {
+display: flex;
+background-color: white;
+max-width: 1200px;
+width: 100%;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-mission {
+background-color: black;
+color: white;
+padding: 40px;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.card-content-mission h2 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.card-content-mission p {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+.card-content-mission a {
+text-decoration: none;
+color: black;
+background-color: white;
+padding: 10px 20px;
+border-radius: 4px;
+align-self: start;
+}
+
+.card-content-mission a:hover {
+background-color: #e0e0e0;
+}
+
+.card-mission-image {
+flex: 1;
+background-image: url("{{ url($researchPost_urls[0]) }}"); /* Set your background image here */
+background-size: cover;
+background-position: center;
+}
+
+@media (max-width: 768px) {
+.container-mission{
+margin: 250px 0;
+}
+.card-mission {
+flex-direction: column;
+}
+
+.card-content-mission, .card-mission-image {
+flex: none;
+width: 100%;
+height: 300px; /* Set a fixed height for smaller screens */
+}
+
+.card-content-mission {
+height: auto;
+}
+}
+
+.gray-background {
+background-color: #b8b8b8b6; /* Light purple background */
+padding:20px 0;
+margin: 50px 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.header {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.header h1 {
+font-size: 30px;
+margin: 0;
+}
+
+.card {
+display: flex;
+flex-direction: column;
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin: 10px;
+flex: 1;
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+
+.card-content {
+padding: 20px;
+}
+
+.card-content p {
+font-size: 14px;
+color: #888;
+margin: 0 0 10px;
+}
+
+.card-content h2 {
+font-size: 18px;
+margin: 0 0 10px;
+}
+
+.card-content h2 a {
+text-decoration: none;
+color: black;
+}
+
+.card-content h2 a:hover {
+text-decoration: underline;
+}
+
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+.cards {
+flex-direction: column;
+}
+}
+
+.another {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 100px 0;
+}
+.card-video {
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+max-width: 60%;
+width: 100%;
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.card-video h1 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 aspect ratio */
+height: 0;
+overflow: hidden;
+max-width: 100%;
+background: #000;
+margin: 20px; /* Add margin around the video */
+border-radius: 8px; /* Optional: Add rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: 0;
+border-radius: 8px; /* Match the rounded corners */
+}
+
+@media (max-width: 768px) {
+.card-video {
+max-width: 90%; /* Adjust the max-width for smaller screens */
+padding: 10px;
+}
+
+.card-video h1 {
+font-size: 20px;
+margin-bottom: 15px;
+}
+
+.video-container {
+margin: 10px; /* Adjust the margin for smaller screens */
+}
+}
